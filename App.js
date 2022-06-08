@@ -101,12 +101,12 @@ export default function App() {
     useEffect(() => {
         if (
             ((birdBottom < (obstaclesNegativeHeight + obstacleHeight + 30) ||
-                    birdBottom > (obstaclesNegativeHeight + obstacleHeight + gap - 30)) &&
+                    birdBottom > (obstaclesNegativeHeight + obstacleHeight + obstacleGap - 30)) &&
                 (obstacleLeft > screenWidth / 2 - 30 && obstacleLeft < screenWidth / 2 + 30)
             )
             ||
             ((birdBottom < (obstaclesNegativeHeightTwo + obstacleHeight + 30) ||
-                    birdBottom > (obstaclesNegativeHeightTwo + obstacleHeight + gap - 30)) &&
+                    birdBottom > (obstaclesNegativeHeightTwo + obstacleHeight + obstacleGap - 30)) &&
                 (obstacleLeftTwo > screenWidth / 2 - 30 && obstacleLeftTwo < screenWidth / 2 + 30)
             )
         ) {
